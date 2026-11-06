@@ -1,0 +1,28 @@
+import Link from "next/link";
+
+export default function Navbar(){
+    return (
+        <header>
+            <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+                <Link href="/" className="text-xl font-bold">
+                    KS Ghost | Barbershop 
+                </Link>
+                <ul>
+                    <li>
+                        <Link href="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link href="/services">Services</Link>
+                    
+                    </li>
+                    <li>
+                        <Link href="/contact">Contact</Link>
+
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+    );
+}
